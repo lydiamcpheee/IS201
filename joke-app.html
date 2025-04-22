@@ -1,0 +1,44 @@
+<!-- joke-app.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joke Generator</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Georgia, serif;
+      text-align: center;
+      padding: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+    #joke {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>😂 Random Joke Generator</h1>
+  <button onclick="generateJoke()">Tell me a joke!</button>
+  <div id="joke">Press the button to laugh.</div>
+  <p><a href="scratch.html">← Back to Scratch Page</a></p>
+
+  <script>
+    const jokes = [
+      "Why don't scientists trust atoms? Because they make up everything!",
+      "Why did the scarecrow win an award? Because he was outstanding in his field!",
+      "Why did the bicycle fall over? Because it was two-tired!",
+    ];
+
+    function generateJoke() {
+      const joke = jokes[Math.floor(Math.random() * jokes.length)];
+      document.getElementById("joke").innerText = joke;
+    }
+  </script>
+</body>
+</html>

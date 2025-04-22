@@ -1,0 +1,30 @@
+body {
+    background-color: #e9f7ef;
+    font-family: 'Arial', sans-serif;
+    color: #222;
+  }
+  
+  .nav {
+    padding: 10px;
+    background-color: #ddd;
+    text-align: left;
+  }
+  
+  .section {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #aaa;
+  }
+  
+  .one {
+    background-color: #fef9e7;
+  }
+  
+  .two {
+    background-color: #d6eaf8;
+  }
+  
+  .three {
+    background-color: #fdebd0;
+  }
+  
